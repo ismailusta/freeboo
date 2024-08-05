@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fribu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset_e_mail">Reset E-Mail</string>
+    <string name="mail_icon">mail icon</string>
+    <string name="send">Send</string>
+    <string name="reset_password_screen">Reset Password Screen</string>
+</resources>

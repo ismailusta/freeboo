@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInPageFragment">
+
+    <fragment
+        android:id="@+id/signInPageFragment"
+        android:name="com.example.fribu.view.SignInPageFragment"
+        android:label="fragment_sign_in_page"
+        tools:layout="@layout/fragment_sign_in_page" >
+        <action
+            android:id="@+id/action_signInPageFragment_to_signUpEmailLoginFragment"
+            app:destination="@id/signUpEmailLoginFragment" />
+        <action
+            android:id="@+id/action_signInPageFragment_to_fragmentFeed"
+            app:destination="@id/fragmentFeed" />
+        <action
+            android:id="@+id/action_signInPageFragment_to_fragmentFeed2"
+            app:destination="@id/fragmentFeed" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpEmailLoginFragment"
+        android:name="com.example.fribu.view.SignUpEmailLoginFragment"
+        android:label="fragment_sign_up_email_login"
+        tools:layout="@layout/fragment_sign_up_email_login" >
+        <action
+            android:id="@+id/action_signUpEmailLoginFragment_to_kayitEkraniFragment"
+            app:destination="@id/kayitEkraniFragment" />
+        <action
+            android:id="@+id/action_signUpEmailLoginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_signUpEmailLoginFragment_to_fragmentFeed"
+            app:destination="@id/fragmentFeed" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitEkraniFragment"
+        android:name="com.example.fribu.view.KayitEkraniFragment"
+        android:label="fragment_kayit_ekrani"
+        tools:layout="@layout/fragment_kayit_ekrani" >
+        <action
+            android:id="@+id/action_kayitEkraniFragment_to_signUpEmailLoginFragment"
+            app:destination="@id/signUpEmailLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.fribu.view.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_signUpEmailLoginFragment"
+            app:destination="@id/signUpEmailLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFeed"
+        android:name="com.example.fribu.view.FragmentFeed"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_fragmentFeed_to_fragmentYukle"
+            app:destination="@id/fragmentYukle" />
+        <action
+            android:id="@+id/action_fragmentFeed_to_signInPageFragment"
+            app:destination="@id/signInPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentYukle"
+        android:name="com.example.fribu.view.FragmentYukle"
+        android:label="fragment_yukle"
+        tools:layout="@layout/fragment_yukle" >
+        <action
+            android:id="@+id/action_fragmentYukle_to_fragmentFeed"
+            app:destination="@id/fragmentFeed" />
+    </fragment>
+</navigation>

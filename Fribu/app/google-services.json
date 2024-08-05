@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "176629969099",
+    "project_id": "sefalletin",
+    "storage_bucket": "sefalletin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176629969099:android:355a42d8b14465f4c4ab4e",
+        "android_client_info": {
+          "package_name": "com.example.fribu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLBdvbDYJlFb73B8cFAsrRGKYTlUHQhh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
